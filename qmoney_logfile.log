@@ -1,0 +1,6 @@
+2024-01-29T13:25:57.771+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 21.0.2 with PID 8508 (started by Fazil_Shafi in C:\Users\user\Desktop\Q_Money\QMoney)
+2024-01-29T13:25:57.773+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-29T13:25:58.980+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 1.737 seconds (process running for 5.156)
+2024-01-29T13:29:35.976+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 21.0.2 with PID 5684 (started by Fazil_Shafi in C:\Users\user\Desktop\Q_Money\QMoney)
+2024-01-29T13:29:35.978+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-29T13:29:36.907+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 1.321 seconds (process running for 3.723)
