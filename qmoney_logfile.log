@@ -1,6 +1,24 @@
-2024-01-29T13:25:57.771+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 21.0.2 with PID 8508 (started by Fazil_Shafi in C:\Users\user\Desktop\Q_Money\QMoney)
-2024-01-29T13:25:57.773+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
-2024-01-29T13:25:58.980+05:30  INFO 8508 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 1.737 seconds (process running for 5.156)
-2024-01-29T13:29:35.976+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 21.0.2 with PID 5684 (started by Fazil_Shafi in C:\Users\user\Desktop\Q_Money\QMoney)
-2024-01-29T13:29:35.978+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
-2024-01-29T13:29:36.907+05:30  INFO 5684 --- [Test worker] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 1.321 seconds (process running for 3.723)
+2024-01-31T17:33:54.391+05:30  INFO 6880 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 6880 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T17:33:54.407+05:30  INFO 6880 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T17:33:58.720+05:30  INFO 6880 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 5.496 seconds (process running for 10.552)
+2024-01-31T18:14:58.026+05:30  INFO 9380 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 9380 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:14:58.030+05:30  INFO 9380 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:15:03.250+05:30  INFO 9380 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 5.988 seconds (process running for 8.765)
+2024-01-31T18:16:44.834+05:30  INFO 12660 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 12660 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:16:44.837+05:30  INFO 12660 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:16:47.829+05:30  INFO 12660 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 3.67 seconds (process running for 6.813)
+2024-01-31T18:25:47.450+05:30  INFO 14536 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 14536 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:25:47.504+05:30  INFO 14536 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:25:51.706+05:30  INFO 17388 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 17388 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:25:51.714+05:30  INFO 17388 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:25:55.653+05:30  INFO 14536 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 10.08 seconds (process running for 18.032)
+2024-01-31T18:25:59.659+05:30  INFO 17388 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 9.84 seconds (process running for 17.896)
+2024-01-31T18:26:58.144+05:30  INFO 11708 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 11708 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:26:58.147+05:30  INFO 11708 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:27:02.178+05:30  INFO 11708 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 4.915 seconds (process running for 8.549)
+2024-01-31T18:27:32.035+05:30  INFO 16676 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 16676 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:27:32.038+05:30  INFO 16676 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:27:35.676+05:30  INFO 16676 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 4.431 seconds (process running for 8.305)
+2024-01-31T18:31:06.671+05:30  INFO 8992 --- [main] c.s.q.PortfolioManagerApplicationTest    : Starting PortfolioManagerApplicationTest using Java 17.0.10 with PID 8992 (started by Fazil_Shafi in C:\Users\user\Desktop\new_repo\QMoney)
+2024-01-31T18:31:06.682+05:30  INFO 8992 --- [main] c.s.q.PortfolioManagerApplicationTest    : No active profile set, falling back to 1 default profile: "default"
+2024-01-31T18:31:10.303+05:30  INFO 8992 --- [main] c.s.q.PortfolioManagerApplicationTest    : Started PortfolioManagerApplicationTest in 4.449 seconds (process running for 8.652)
