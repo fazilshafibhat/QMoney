@@ -13,3 +13,4 @@ public interface Candle {
 
     LocalDate getDate();
 }
+//Solution

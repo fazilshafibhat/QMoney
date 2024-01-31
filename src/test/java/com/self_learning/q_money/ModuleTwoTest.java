@@ -1,72 +1,45 @@
 package com.self_learning.q_money;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import com.self_learning.q_money.dto.PortfolioTrade;
+
 public class ModuleTwoTest {
     @Test
-    void mainReadQuotes() throws Exception {
-        // given
-        String filename = "assessments/trades.json";
-        List<String> expected = Arrays.asList(new String[] { "CTS", "CSCO", "MSFT" });
+  void readStockFromJson() throws Exception {
+    //given
+    String filename = "assessments/trades.json";
+    List<String> expected = Arrays.asList(new String[]{"MSFT", "CSCO", "CTS"});
 
-        // when
-        List<String> actual = PortfolioManagerApplication
-                .mainReadQuotes(new String[] { filename, "2019-12-12" });
+    //when
+    List<PortfolioTrade> trades = PortfolioManagerApplication
+        .readTradesFromJson(filename);
+    List<String> actual = trades.stream().map(PortfolioTrade::getSymbol).collect(Collectors.toList());
 
-        // then
-        Assertions.assertEquals(expected, actual);
-    }
+    //then
+    Assertions.assertEquals(expected, actual);
+  }
 
-    @Test
-    void mainReadQuotesEdgeCase() throws Exception {
-        // given
-        String filename = "assessments/empty.json";
-        List<String> expected = Arrays.asList(new String[] {});
+  @Test
+  void prepareUrl() throws Exception {
+    //given
+    PortfolioTrade trade = new PortfolioTrade();
+    trade.setPurchaseDate(LocalDate.parse("2010-01-01"));
+    trade.setSymbol("AAPL");
+    String token = "abcd";
+    //when
+    String tiingoUrl = PortfolioManagerApplication
+            .prepareUrl(trade, LocalDate.parse("2010-01-10"), token);
 
-        // when
-        List<String> actual = PortfolioManagerApplication
-                .mainReadQuotes(new String[] { filename, "2019-12-12" });
+    //then
+    String uri = "https://api.tiingo.com/tiingo/daily/AAPL/prices?startDate=2010-01-01&endDate=2010-01-10&token=abcd";
 
-        // then
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    void mainReadQuotesInvalidDates() throws Exception {
-        // given
-        String filename = "assessments/trades_invalid_dates.json";
-        // when
-        Assertions.assertThrows(RuntimeException.class, () -> PortfolioManagerApplication
-                .mainReadQuotes(new String[] { filename, "2017-12-12" }));
-
-    }
-
-    @Test
-    void mainReadQuotesInvalidStocks() throws Exception {
-        // given
-        String filename = "assessments/trades_invalid_stock.json";
-        // when
-        Assertions.assertThrows(RuntimeException.class, () -> PortfolioManagerApplication
-                .mainReadQuotes(new String[] { filename, "2017-12-12" }));
-
-    }
-
-    @Test
-    void mainReadQuotesOldTrades() throws Exception {
-        // given
-        String filename = "assessments/trades_old.json";
-        List<String> expected = Arrays.asList(new String[] { "CTS", "ABBV", "MMM" });
-
-        // when
-        List<String> actual = PortfolioManagerApplication
-                .mainReadQuotes(new String[] { filename, "2019-12-12" });
-
-        // then
-        Assertions.assertEquals(expected, actual);
-    }
-
+    Assertions.assertEquals(tiingoUrl, uri);
+  }
 }

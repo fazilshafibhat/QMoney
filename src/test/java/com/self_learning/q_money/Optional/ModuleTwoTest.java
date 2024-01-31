@@ -1,4 +1,5 @@
 package com.self_learning.q_money.Optional;
+
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -11,37 +12,35 @@ import com.self_learning.q_money.PortfolioManagerApplication;
 import com.self_learning.q_money.dto.PortfolioTrade;
 
 public class ModuleTwoTest {
-    @Test
+  @Test
   void readStockFromJson() throws Exception {
-    //given
+    // given
     String filename = "assessments/trades.json";
-    List<String> expected = Arrays.asList(new String[]{"MSFT", "CSCO", "CTS"});
+    List<String> expected = Arrays.asList(new String[] { "MSFT", "CSCO", "CTS" });
 
-    //when
+    // when
     List<PortfolioTrade> trades = PortfolioManagerApplication
         .readTradesFromJson(filename);
     List<String> actual = trades.stream().map(PortfolioTrade::getSymbol).collect(Collectors.toList());
 
-    //then
+    // then
     Assertions.assertEquals(expected, actual);
   }
 
   @Test
   void prepareUrl() throws Exception {
-    //given
+    // given
     PortfolioTrade trade = new PortfolioTrade();
     trade.setPurchaseDate(LocalDate.parse("2010-01-01"));
     trade.setSymbol("AAPL");
     String token = "abcd";
-    //when
+    // when
     String tiingoUrl = PortfolioManagerApplication
-            .prepareUrl(trade, LocalDate.parse("2010-01-10"), token);
+        .prepareUrl(trade, LocalDate.parse("2010-01-10"), token);
 
-    //then
+    // then
     String uri = "https://api.tiingo.com/tiingo/daily/AAPL/prices?startDate=2010-01-01&endDate=2010-01-10&token=abcd";
 
     Assertions.assertEquals(tiingoUrl, uri);
   }
-
-
 }
