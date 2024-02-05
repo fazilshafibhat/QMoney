@@ -3,7 +3,8 @@ package com.self_learning.q_money.dto;
 import java.time.LocalDate;
 
 public class PortfolioTrade {
-     public PortfolioTrade() {  }
+  public PortfolioTrade() {
+  }
 
   public static enum TradeType {
     BUY,
@@ -38,7 +39,6 @@ public class PortfolioTrade {
     this.purchaseDate = purchaseDate;
   }
 
-  //solution
   public String getSymbol() {
     return symbol;
   }
@@ -54,6 +54,4 @@ public class PortfolioTrade {
   public TradeType getTradeType() {
     return tradeType;
   }
-
 }
-

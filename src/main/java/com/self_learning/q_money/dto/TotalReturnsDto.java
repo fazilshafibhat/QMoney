@@ -25,4 +25,3 @@ public class TotalReturnsDto {
         this.closingPrice = closingPrice;
     }
 }
-//Solution

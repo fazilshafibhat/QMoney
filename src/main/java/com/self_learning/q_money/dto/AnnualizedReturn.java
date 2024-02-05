@@ -2,7 +2,9 @@ package com.self_learning.q_money.dto;
 
 public class AnnualizedReturn {
   private final String symbol;
+
   private final Double annualizedReturn;
+
   private final Double totalReturns;
 
   public AnnualizedReturn(String symbol, Double annualizedReturn, Double totalReturns) {
